@@ -1,0 +1,74 @@
+.container-fluid{
+	background-color: #FDFEFE;
+	height:80px;
+}
+.navbar{
+	img {
+		width: 200px;
+	}
+	.monito{
+		color:#FFB300;
+	}
+	.tooltip-container{
+		position: absolute;
+		right: 0;
+		top: 10px;
+	}
+}
+.iconNav{
+	display:inline-block;
+}
+//ESTILO DE MI PRIMER SELECT
+#doubleSelect{
+	background-color:#FDFEFE;
+	border-radius: 1px solid #FDFEFE;
+	margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+	label {
+		margin-top: 12px;
+		margin-bottom: 12px;
+    	margin-left:14px;
+		padding-bottom:5px;
+	}
+	h4 h5{
+		margin-left: 12px;
+	}
+	span{
+		margin-left: 12px;
+	}
+}
+.form-control{
+	border: 1px solid #FFB300;
+	width:94%;
+    margin-left: 14px;
+}
+//ESTILO DE MI SEGUNDO SELECT VEHICULOS
+.radio{
+	img {
+	    vertical-align: top;
+	    width: 12%;
+	}
+	h4{
+		margin-left: 11px;
+    	display: inherit;
+	}
+	p{
+		margin: -24px 66px 10px;
+	}
+}
+.people{
+	input{
+		display:inline-block;
+		border:1px solid #FFB300;
+		width: 66px;
+    	height: 35px;
+    	margin-left: 261px;
+	}
+}
+// ESTILO DEL MAPA
+#map{
+	position:absolute;
+    height: 100%;
+}
+ 

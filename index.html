@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Examen Herramientas Productividad</title>
+	<!-- BOOTSTRAP STYLE CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--LINK STYLE SHEETS-->
+	<link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top" >
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<div class="row">
+					<div class="col-xs-12" class="col-md-12">
+						<div class="container"></div>
+					</div>
+					<div class="col-xs-9 col-md-9">
+						<a class="navbar-brand" href="#"><img src="src/img/logo-gris.jpg" alt=""></a>
+					</div>
+					<div class="col-xs-3 col-md-3  tooltip-container">
+						<a href="#" data-toggle="tooltip" data-placement="bottom" class="iconNav" title="La nueva forma de moverte en la ciudad. Con carrocomp! puedes compartir tu viaje con amigos y cobrar el costo equivalente."><span><i class="fa fa-info-circle fa-4x monito" aria-hidden="true"></i></span></a>
+					</div>	
+      	</div>
+			</div>
+		</div>
+	</nav>
+	<!--END NAV SECTION -->
+	<!--AQUI VA MI MAPA-->
+	<div class="col-xs-12 col-md-12" id="map">
+	</div>
+	<!--SECCION DEL SELECT DE DESTINO-->
+	<section> 
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<div class="form-group" id="doubleSelect">
+						<label for="sel1">ORIGEN</label>
+						<select class="form-control selecOne" placeholder="Seleccione" required="true">
+							<option value="0">Seleccione</option>
+							<option value="1">Arica</option>
+							<option value="2">Iquique</option>
+							<option value="3">Antofagasta</option>
+							<option value="4">Calama</option>
+							<option value="5">La Serena</option>
+							<option value="6">Valparaiso</option>
+							<option value="7">Santiago</option>
+							<option value="8">Rancagua</option>
+							<option value="9">Talca</option>
+							<option value="10">Concepción</option>
+							<option value="11">Temuco</option>
+							<option value="12">Valdivia</option>
+							<option value="13">Puerto Montt</option>
+							<option value="14">Coyhaique</option>
+							<option value="15">Puntas Arenas</option>
+						</select>
+						<label for="sel1">DESTINO</label>
+						<select class="form-control selecOne" placeholder="Seleccione" required="true">
+							<option value="0">Seleccione</option>
+							<option value="1">Arica</option>
+							<option value="2">Iquique</option>
+							<option value="3">Antofagasta</option>
+							<option value="4">Calama</option>
+							<option value="5">La Serena</option>
+							<option value="6">Valparaiso</option>
+							<option value="7">Santiago</option>
+							<option value="8">Rancagua</option>
+							<option value="9">Talca</option>
+							<option value="10">Concepción</option>
+							<option value="11">Temuco</option>
+							<option value="12">Valdivia</option>
+							<option value="13">Puerto Montt</option>
+							<option value="14">Coyhaique</option>
+							<option value="15">Puntas Arenas</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<button type="button" class="btn btn-warning btn-lg btn-block" desabled="desabled">BUSCAR</button>
+				</div>
+			</div>
+		</div><!--END DESTINO SECTION--> 
+	</section>
+	<section> <!--VEHICULO SECTION--> 
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<div class="form-group" id="doubleSelect">
+						<h4>VEHICULO</h4>
+						<span>selección</span>
+						<form>
+							<div class="radio">
+						  	<label><input type="radio" name="optradio"><img src="src/img/moto.jpg" alt=""><h4>Motocicleta</h4><p>máximo 2 pasajeros</p></label>
+							</div>
+							<div class="radio">
+							  <label><input type="radio" name="optradio"><img src="src/img/auto.jpg" alt=""><h4>Automóvil</h4><p>máximo 5 pasajeros</p></label>
+							</div>
+							<div class="radio">
+							  <label><input type="radio" name="optradio" disabled><img src="src/img/van.jpg" alt=""><h4>Minivan</h4><p>máximo 10 pasajeros</p></label>
+							</div>
+							<div class="radio">
+							  <label><input type="radio" name="optradio" disabled><img src="src/img/camion.jpg" alt=""><h4>Camión</h4><p>máximo 3 pasajeros</p></label>
+							</div>
+							<div class="people">
+									<h5>Cantidad pasajeros:</h5>
+									<input type="text">
+							{++</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<button type="button" class="btn btn-warning btn-lg btn-block" desabled="desabled">Compartir Carro</button>
+				</div>
+			</div>	
+		</div>
+	</section><!--VEHICULO SECTION--> 
+	<section id="calculator" >
+		<div class="container">
+		</div>
+	</section><!--END PROJECT SECTION-->
+	<div id="footer">
+		<!--2014 www.yourdomain.com | All Right Reserved --> 
+	</div><!-- END FOOTER SECTION -->
+</body>
+<!--AQUI VAN LOS ENLACES DE MIS SCRIPT-->
+	<!--ENLACE DE JQUERY-->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<!--ENLACE DE CDN BOOTSTRAP.MIN.JS-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--ENLACE DE MI JS-->
+	<script src="https://use.fontawesome.com/54b24ef2c1.js"></script>
+	<script type="text/javascript" src="src/js/custom.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSgc3m8zNUxnbH5R1vOu0arFEd7NhH0-U&callback=initMap"></script>
+</html>

@@ -23,7 +23,7 @@
 					<div class="col-xs-3 col-md-3  tooltip-container">
 						<a href="#" data-toggle="tooltip" data-placement="bottom" class="iconNav" title="La nueva forma de moverte en la ciudad. Con carrocomp! puedes compartir tu viaje con amigos y cobrar el costo equivalente."><span><i class="fa fa-info-circle fa-4x monito" aria-hidden="true"></i></span></a>
 					</div>	
-      	</div>
+      			</div>
 			</div>
 		</div>
 	</nav>
@@ -38,7 +38,7 @@
 				<div class="col-xs-12 col-md-6">
 					<div class="form-group" id="doubleSelect">
 						<label for="sel1">ORIGEN</label>
-						<select class="form-control selecOne" placeholder="Seleccione" required="true">
+						<select class="form-control selecOne" placeholder="Seleccione" required="true" id="cityOne">
 							<option value="0">Seleccione</option>
 							<option value="1">Arica</option>
 							<option value="2">Iquique</option>
@@ -57,7 +57,7 @@
 							<option value="15">Puntas Arenas</option>
 						</select>
 						<label for="sel1">DESTINO</label>
-						<select class="form-control selecOne" placeholder="Seleccione" required="true">
+						<select class="form-control selecOne" placeholder="Seleccione" required="true" id="cityTwo">
 							<option value="0">Seleccione</option>
 							<option value="1">Arica</option>
 							<option value="2">Iquique</option>
@@ -80,7 +80,7 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
-					<button type="button" class="btn btn-warning btn-lg btn-block" desabled="desabled">BUSCAR</button>
+					<button type="button" class="btn btn-warning btn-lg btn-block" desabled="desabled" id="botonOne">BUSCAR</button>
 				</div>
 			</div>
 		</div><!--END DESTINO SECTION--> 
@@ -89,7 +89,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
-					<div class="form-group" id="doubleSelect">
+					<div class="form-group vehi" id="doubleSelect">
 						<h4>VEHICULO</h4>
 						<span>selección</span>
 						<form>
@@ -108,7 +108,7 @@
 							<div class="people">
 									<h5>Cantidad pasajeros:</h5>
 									<input type="text">
-							{++</div>
+							</div>
 						</form>
 					</div>
 				</div>
@@ -136,5 +136,5 @@
 	<!--ENLACE DE MI JS-->
 	<script src="https://use.fontawesome.com/54b24ef2c1.js"></script>
 	<script type="text/javascript" src="src/js/custom.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSgc3m8zNUxnbH5R1vOu0arFEd7NhH0-U&callback=initMap"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuw_ExjWu3Cc23rxWUcqsLTKlWwZCymvs&callback=initMap"></script>
 </html>
